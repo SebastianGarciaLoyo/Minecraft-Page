@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guias Para Minecraft</title>
+    <link rel="stylesheet" href="./tierra.css">
+</head>
+<body>
+    <header id="titulo">
+        <a class="tienda" href="./Tienda.html">Tienda</a>
+        <img class="logo" src="./imagenes/logo.png" alt="logo">
+        <h1>Guias De Minecraft</h1>
+        <a class="sesion" href="#">Iniciar Sesion</a>
+    </header>
+
+    <nav>
+        <ul id="navegacion">
+            <li class="item"><a href="./Guias-Minecraft.html">Inicio</a></li>
+            <li class="item"><a href="./Guias.html">Guias</a></li>
+            <li class="item"><a href="./Ideas-Casa.html">Ideas de casas</a></li>
+            <li class="item"><a href="./Ideas-Granjas.html">Ideas de granja</a></li>
+            <li class="item"><a href="./Coffe.html">Coffe</a></li>
+        </ul>
+    </nav>
+    <br><br><br>
+    <main class="contenedor">
+        <h2 class="sub">Bienvenida</h2>
+        <section class="caja">
+            <article class="contenido">
+                <img class="imagen" src="./imagenes/teclado.jpg" alt="steve">
+                <p class="texto">Hola aquí puedes iniciar sesión en mi página para que estés al tanto de las nuevas cosas!</p>
+                <img class="imagen" src="./imagenes/teclado.jpg" alt="steve">
+            </article>
+        </section>
+        <br><br><br>
+        <h2 class="sub">Iniciar Sesión</h2>
+        <form id="formu" class="formu" action="">
+            <br>
+            <p>Usuario: <input type="text" id="nombre" name="nombre" size="30"></p>
+            <br>
+            <p class="txt">Contraseña: <input class="contra" type="password" id="contra" name="contra"></p>
+            
+            <p class="conte">
+                <input class="enviar" type="submit" value=" Iniciar Sesion">
+                <input class="reset" type="button" onclick="window.location.href = 'Registro.html'" value="Registrarse">
+            </p>
+            <br>
+        </form>
+    </main>
+
+    <script src="./JavaScript/Sesion.js"></script>
+</body>
+</html>

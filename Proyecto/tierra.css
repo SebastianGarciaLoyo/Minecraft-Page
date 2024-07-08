@@ -1,0 +1,352 @@
+@font-face {
+    font-family: 'minecraft';
+    font-style: normal;
+    font-weight: normal;
+    src: url("./fuente/Minecrafter.Reg.ttf") format('truetype');
+    }
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    background-image: url(./imagenes/minecraft.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+#titulo{
+    display: flex;
+    background-color: #77dd77;
+    text-align: center;
+    width: 100vw;
+    height: 53px;
+    font-family: 'minecraft';
+    padding: 1rem;
+    font-size: smaller;
+    justify-content: center;
+    align-items: center;
+}
+
+.sesion{
+    position: relative;
+    border: 2px solid;
+    padding: 10px;
+    left: 10vh;
+}
+
+.item{
+    width:calc(100vw /5);
+    padding: 0.5rem;
+    border-right: 2px solid white;
+    font-family: 'minecraft';
+    
+    }
+
+.logo{
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+    justify-content: left;
+}
+
+#navegacion{
+background-color:#84b6f4;
+display:flex ;
+list-style: none;
+text-align: center;
+width: fit-content;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.tienda{
+    position: relative;
+    right: 13vh;
+    padding: 10px;
+    border: 2px solid;
+}
+
+.contenido{
+    background-color: rgba(253, 253, 150, 0.55);
+    backdrop-filter: blur(4px);
+    display: flex;
+    height: fit-content;
+    justify-content: flex-end;
+    font-family: 'minecraft';
+    
+}
+
+.imagen{
+    height: 15vw;
+    width: 15vw;
+    
+}
+
+.texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:calc(80vw - 10vw) ;
+    border: 2px solid;
+    font-size: x-large;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+
+.sub{
+    font-family: 'minecraft';
+    color: white;
+    text-align: center;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.formu{
+    border: 2px solid black;
+    background-color: rgba(253, 253, 150, 0.55);
+    backdrop-filter: blur(4px);
+    width: fit-content;
+    height:vw ;
+    font-family: 'minecraft';
+    border-radius: 10px;
+}
+
+.conte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.edad{
+    width: 200px;
+    
+}
+
+
+
+.cafe{
+    width: 110px;
+}
+
+.enviar{
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+    padding: 10px;
+    
+}
+.reset{
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.contra{
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+}
+
+.cubo{
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: relative;
+    bottom: 206px;
+    left: 400px;
+}
+
+.cubo:hover{
+    background-image: url("./imagenes/goku-prowler.gif");
+    background-size: cover;
+    transition: all 0.5s;
+    opacity:3;
+}
+
+.tocalo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    left: 5px;
+    
+}
+
+.cubo2{
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 350px;
+    right: 400px;
+
+}
+
+.cubo2:hover{
+    background-image: url("./imagenes/roca.gif");
+    background-size: cover;
+    transition: all 0.5s;
+}
+
+.cubo2:hover > .tocalo {
+    opacity: 0;
+}
+
+.cubo:hover > .tocalo {
+    opacity: 0;
+}
+
+@media(max-width:480px){
+    body{
+        background-size: 100vh;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .texto{
+        font-size: medium;
+        line-height: 22px;
+        letter-spacing: 1px;
+        width: auto;
+    }
+
+    .sesion{
+        left: 0vh;
+        border: none;
+        
+    }
+
+    .tienda{
+        border: none;
+        position: relative;
+        left: 32vh;
+    }
+
+    .contenido{
+        width: auto;
+        height: auto;
+    }
+
+    .imagen{
+        display: none;
+    }
+
+    .item{
+        display: flex;
+        justify-content: flex-start;
+        width:calc(100vw /5);
+        padding: 0.3rem;
+    }
+
+    .logo{
+        width: 9vw;
+        height: 9vw;
+        display: flex;
+        justify-content: left;
+        }
+
+    .enviar{
+        width: 30vh;
+        height: fit-content;
+    }
+
+    .reset{
+        width: fit-content;
+        height: fit-content;
+    }
+
+
+    .cubo{
+        position: relative;
+        left: 190px;
+        bottom: 10px;
+    }
+
+    .cubo2{
+        right: auto;
+        bottom: 160px;
+        left: -100px;
+    }
+}
+
+@media(max-width:960px){
+    .logo{
+        width: 7vw;
+        height: 6vh;
+    }
+
+    .imagen{
+        height: 15vw;
+        width: 15vw;
+    }
+
+    .sesion{
+        left: 2.4vh;
+    }
+
+    .texto{
+    font-size: medium;
+    letter-spacing: 1px;
+    line-height: 1rem;
+    }
+    
+    
+
+    .enviar{
+        width: fit-content;
+        height:fit-content;
+    }
+
+    .reset{
+        width: fit-content;
+        height:fit-content;
+    }
+
+    .cubo{
+        position: relative;
+        left: 100px;
+        bottom: 10px;
+    }
+
+    .cubo2{
+        right: 100px;
+        bottom: 160px;
+    }
+}
+
+@media(max-width:1328px){
+    .texto{
+        font-size: medium;
+    }
+
+    .tienda{
+        position: relative;
+        right: 10vh;
+    }
+    
+}

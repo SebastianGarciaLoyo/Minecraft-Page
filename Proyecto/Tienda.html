@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda De Minecraft</title>
+    <link rel="stylesheet" href="./esmeralda.css">
+</head>
+<body>
+    <header id="titulo">
+        <a class="tienda" href="#">Tienda</a>
+        <img class="logo" src="./imagenes/logo.png" alt="logo">
+        <h1>Guias De Minecraft</h1>
+        <a class="sesion" href="./Inicio-Sesion.html">Iniciar Sesion</a>
+    </header>
+    
+    <nav>
+        <ul id="navegacion">
+            <li class="item"><a href="./Guias-Minecraft.html">Inicio</a></li>
+            <li class="item"><a href="./Guias.html">Guias</a></li>
+            <li class="item"><a href="./Ideas-Casa.html">Ideas de casas</a></li>
+            <li class="item"><a href="./Ideas-Granjas.html">Ideas de granja</a></li>
+            <li class="item"><a href="./Coffe.html">Coffe</a></li>
+        </ul>
+    </nav>
+    <br><br><br>
+
+    <main id="contenedor">
+        <h2 class="sub">Un Video Mas Mi Gente</h2>
+        <section class="caja">
+            <article class="contenido">
+                <img class="imagen" src="./imagenes/tiendita.jpg" alt="hola">
+                <p class="texto">Hola aquí puedes encontrar items relacionados con el juego por si quieres comprar uno y tenerlo como recuerdo.</p>
+                <img class="imagen" src="./imagenes/tiendita.jpg" alt="test">
+            </article>
+        </section>
+        <br><br><br>
+
+        <h2 class="sub">Tarjeta De Regalo</h2>
+        <section class="caja">
+            <article class="contenido2">
+                <img class="imagen2" src="./imagenes/regalo.jpg" alt="test">
+                <p class="texto2">
+                    <img class="Tarjeta" src="./imagenes/Tarjeta.webp" alt="tarjeta">Nombre: Tarjeta De Minecraft
+                    <br>Precio: 90000
+                    <br><br><br><br>
+                    <button class="boton" onclick="tienda.agregarProducto('Tarjeta De Minecraft', 90000)">Añadir</button>
+                </p>
+                <img class="imagen2" src="./imagenes/regalo.jpg" alt="test">
+            </article>
+        </section>
+        <br><br><br>
+
+        <h2 class="sub">Peluche De Creeper</h2>
+        <section class="caja">
+            <article class="contenido2">
+                <img class="imagen3" src="./imagenes/creeper.jpg" alt="test">
+                <p class="texto2">
+                    <img class="Peluche" src="./imagenes/Peluche.jpg" alt="creeper">Nombre: Peluche De Creeper
+                    <br>Precio: 50000
+                    <br><br><br><br>
+                    <button class="boton" onclick="tienda.agregarProducto('Peluche De Creeper', 50000)">Añadir</button>
+                </p>
+                <img class="imagen3" src="./imagenes/creeper.jpg" alt="test">   
+            </article>
+        </section>
+        <br><br><br>
+
+        <h2 class="sub">Camiseta Estampada</h2>
+        <section class="caja">
+            <article class="contenido2">
+                <img class="imagen4" src="./imagenes/camisilla.jpg" alt="test">
+                <p class="texto2">
+                    <img class="Camisa" src="./imagenes/camiseta.jpg" alt="camisa">Nombre: Camiseta Estampada De Minecraft
+                    <br>Precio: 45000
+                    <br><br><br><br>
+                    <button class="boton" onclick="tienda.agregarProducto('Camiseta Estampada', 45000)">Añadir</button>
+                </p>
+                <img class="imagen4" src="./imagenes/camisilla.jpg" alt="test">
+            </article>
+        </section>
+        <br><br><br>
+
+        <div id="factura">
+            <h2>Factura</h2>
+            <ul id="listaProductos"></ul>
+            <p id="total"></p>
+            <button class="boton2">Comprar</button>
+        </div>
+    </main>
+
+    <script src="./JavaScript/Tienda.js">
+    </script>
+</body>
+</html>
+

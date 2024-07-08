@@ -1,0 +1,287 @@
+@font-face {
+    font-family: 'minecraft';
+    font-style: normal;
+    font-weight: normal;
+    src: url("./fuente/Minecrafter.Reg.ttf") format('truetype');
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./imagenes/minecraft.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+#titulo{
+    display: flex;
+    background-color: #77dd77;
+    text-align: center;
+    width: 100vw;
+    height: 53px;
+    font-family: 'minecraft';
+    padding: 1rem;
+    font-size: smaller;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+    justify-content: left;
+}
+
+.sesion{
+    position: relative;
+    left: 10vh;
+    border: 2px solid;
+    padding: 10px;
+}
+
+#navegacion{
+background-color:#84b6f4;
+display:flex ;
+list-style: none;
+text-align: center;
+width: fit-content;
+
+}
+.item{
+width:calc(100vw /5);
+padding: 0.5rem;
+border-right: 2px solid white;
+font-family: 'minecraft';
+
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.tienda{
+    position: relative;
+    right: 12vh;
+    padding: 10px;
+    border: 2px solid;
+}
+
+.sub{
+    text-align: center;
+    color: white;
+    font-family: 'minecraft';
+}
+
+.contenido{
+    background-color: rgba(253, 253, 150, 0.55);
+    backdrop-filter: blur(4px);
+    display: flex;
+    height: fit-content;
+    justify-content: flex-end;
+    font-family: 'minecraft';
+    
+}
+
+.contenido2{
+    background-color: rgba(253, 253, 150, 0.55);
+    backdrop-filter: blur(4px);
+    display: flex;
+    height: fit-content;
+    justify-content: flex-end;
+    font-family: 'minecraft';
+}
+
+.imagen{
+    height: 16vw;
+    width: 16vw;
+    
+}
+
+.imagen2{
+    height: 16vw;
+    width: 16vw;
+}
+
+.imagen3{
+    height: 16vw;
+    width: 17vw;
+}
+
+.texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:calc(80vw - 10vw) ;
+    border: 2px solid;
+    font-size: x-large;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+
+.texto2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:calc(80vw - 10vw) ;
+    border: 2px solid;
+    font-size: large;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+
+.buscar{
+    display: flex;
+    justify-content: right;
+    float: right;
+    position: absolute;
+    font-family: 'minecraft';
+    
+}
+
+@media (max-width:480px){
+    body{
+        background-size: 100vh;
+    }
+    
+    #titulo{
+        width: 100vw;
+        height: 53px;
+        padding: 1rem;
+    }
+
+    .item{
+        display: flex;
+        justify-content: flex-start;
+        width:calc(100vw /5);
+        padding: 0.3rem;
+    }
+
+    .tienda{
+        border: none;
+        position: relative;
+        left: 32vh;
+    }
+
+    .sesion{
+        border: none;
+        left: 0vh;
+    }
+    
+    .texto{
+        font-size: medium;
+        line-height: 22px;
+        letter-spacing: 1px;
+        width: auto;
+    }
+
+    .texto2{
+        font-size: medium;
+        width: auto;
+        line-height: 22px;
+        letter-spacing: 1px;
+    }
+
+    .imagen{
+        display: none;
+    }
+
+    .imagen2{
+        display: none;
+    }
+
+    .imagen3{
+    display: none;
+    }
+    
+    .contenido2{
+        width: 100%;
+    }
+    
+    .logo{
+    width: 9vw;
+    height: 9vw;
+    display: flex;
+    justify-content: left;
+    }
+
+    .buscar{
+        top: 7rem;
+    }
+}
+
+@media(max-width:960px){
+    body{
+        height: 100vh;
+    }
+    
+    .logo{
+        width: 7vw;
+        height: 6vh;
+    }
+
+    .texto{
+    font-size: medium;
+    line-height: 16px;
+    }
+    
+    .sesion{
+        left: 2.4vh;
+    }
+
+    .texto2{
+    font-size: medium;
+    width: auto;
+    }
+
+    .imagen2{
+        display: none;
+    }
+
+    .imagen3{
+        display: none;
+    }
+
+    .video{
+        height: 100vw;
+    }
+
+    .buscar{
+        top: 7rem;
+    }
+
+    
+}
+
+@media(max-width:1328px){
+    .texto{
+        font-size: medium;
+    }
+
+    .texto2{
+        width: auto;
+    }
+
+    .imagen2{
+        display: none;
+    }
+
+    .video{
+        height: auto;
+    }
+
+    .tienda{
+        position: relative;
+        right: 10vh;
+    }
+    
+}

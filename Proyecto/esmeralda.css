@@ -1,0 +1,463 @@
+@font-face {
+    font-family: 'minecraft';
+    font-style: normal;
+    font-weight: normal;
+    src: url("./fuente/Minecrafter.Reg.ttf") format('truetype');
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./imagenes/minecraft.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+#titulo{
+    display: flex;
+    background-color: #77dd77;
+    text-align: center;
+    width: 100vw;
+    height: 53px;
+    font-family: 'minecraft';
+    padding: 1rem;
+    font-size: smaller;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+    justify-content: left;
+}
+
+.sesion{
+    position: relative;
+    left: 10vh;
+    border: 2px solid;
+    padding: 10px;
+}
+
+#navegacion{
+background-color:#84b6f4;
+display:flex ;
+list-style: none;
+text-align: center;
+width: fit-content;
+height: fit-content;
+
+}
+.item{
+width:calc(100vw /5);
+padding: 0.5rem;
+border-right: 2px solid white;
+font-family: 'minecraft';
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.sub{
+    text-align: center;
+    color: white;
+    font-family: 'minecraft';
+}
+
+.tienda{
+    position: relative;
+    right: 13vh;
+    padding: 10px;
+    border: 2px solid;
+}
+
+.contenido{
+    background-color: rgba(253, 253, 150, 0.55);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'minecraft';
+}
+
+.contenido2{
+    background-color: rgba(253, 253, 150, 0.55);
+    backdrop-filter: blur(4px);
+    display: flex;
+    font-family: 'minecraft';
+}
+
+
+.imagen{
+    height: 16vw;
+    width: 16vw;
+    
+}
+
+.imagen2{
+    height: 16vw;
+    width: 16vw;
+}
+
+.imagen3{
+    height: 16vw;
+    width: 16vw;
+}
+
+.imagen4{
+    height: 16vw;
+    width: 16vw;
+}
+
+.imagen5{
+    height: 16vw;
+    width: 16vw;
+}
+
+.imagen6{
+    height: 16vw;
+    width: 16vw;
+}
+
+.Tarjeta{
+    height: 15vw;
+    width: 15vw;
+    padding: 10px;
+}
+
+.Peluche{
+    height: 15vw;
+    width: 15vw;
+    padding: 10px;
+}
+
+.Camisa{
+    height: 15vw;
+    width: 15vw;
+    padding: 10px;
+}
+
+#factura {
+    display: none;
+    border: 2px solid #333;
+    padding: 10px;
+    margin-top: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f9f9f9;
+    font-family: 'minecraft';
+}
+
+#factura h2 {
+    text-align: center;
+    color: #333;
+}
+
+#listaProductos {
+    list-style-type: none;
+    padding: 0;
+}
+
+.producto {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botonEliminar {
+    background-color: #ff5050;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: 'minecraft';
+}
+
+#total {
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+.boton{
+    margin-top: 2rem;
+    padding: 10px;
+    position: fixed;
+}
+
+.boton2{
+    padding: 3px;
+    position: relative;
+    left: 40%;
+}
+
+.contexto{
+    text-align: center;
+}
+
+.texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:calc(84vw - 10vw) ;
+    border: 2px solid;
+    font-size: x-large;
+    text-align: center;
+}
+
+.texto2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:calc(80vw - 10vw) ;
+    border: 2px solid;
+    font-size: large;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+
+.buscar{
+    display: flex;
+    justify-content: right;
+    float: right;
+    position: absolute;
+    font-family: 'minecraft';
+    
+}
+
+
+@media (max-width:480px){
+    body{
+        overflow-x: hidden;
+    }
+
+    #titulo{
+        width: 100vw;
+        height: 50px;
+    }
+
+    .boton{
+    padding: 2px;
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+
+    .tienda{
+        border: none;
+        position: relative;
+        left: 32vh;
+    }
+
+    .item{
+        display: flex;
+        justify-content: flex-start;
+        width:calc(100vw /5);
+        padding: 0.3rem;
+    }
+    
+    .texto{
+        font-size: medium;
+        width: auto;
+    }
+
+    .texto2{
+        display: flex;
+        width: 90px;
+        justify-content: right;
+    }
+
+    .sesion{
+        border: none;
+        position: none;
+        left: vh;
+        right: 100vh;
+    }
+
+    .Tarjeta{
+        width: 30vh;
+        height: 30vh;
+    }
+
+    .Peluche{
+        width: 30vh;
+        height: 30vh;
+    }
+
+    .Camisa{
+        width: 30vh;
+        height: 30vh;
+
+    }
+
+    .imagen{
+        display: none;
+    }
+
+    .imagen2{
+        display: none;
+    }
+
+    .imagen3{
+    display: none;
+    }
+
+    .imagen4{
+        display: none;
+    }
+
+    .imagen5{
+        display: none;
+    }
+
+    .imagen6{
+        display: none;
+    }
+    
+    .contenido2{
+        width: 100%;
+        position: relative;
+    }
+    
+    .logo{
+    width: 10vw;
+    height: 10vw;
+    display: flex;
+    justify-content: left;
+    }
+
+    .buscar{
+        top: 7rem;
+    }
+}
+
+@media(max-width:960px){
+    .logo{
+        width: 7vw;
+        height: 6vh;
+    }
+
+    .texto{
+        width: fit-content;
+    font-size: medium;
+    letter-spacing: 1px;
+    }
+
+    .tienda{
+        position: relative;
+        right: 8vh;
+    }
+
+    .boton{
+        bottom: 10vh;
+        margin-top: 2rem;
+        padding: 10px;
+    }
+
+    .texto2{
+        width: 100vh;
+    }
+
+    .sesion{
+        left: 2.4vh;
+    }
+
+    .imagen{
+        display: none;
+    }
+
+    .imagen2{
+        display: none;
+    }
+
+    .imagen3{
+    display: none;
+    }
+
+    .imagen4{
+        display: none;
+    }
+
+    .imagen5{
+        display: none;
+    }
+
+    .imagen6{
+        display: none;
+    }
+
+    .Tarjeta{
+        width: 25vh;
+        height: 25vh;
+    }
+
+    .Peluche{
+        width: 25vh;
+        height: 25vh;
+    }
+
+    .Camisa{
+        width: 22vh;
+        height: 22vh;
+    }
+
+}
+
+@media(max-width:1328px){
+    .texto{
+        font-size: medium;
+    }
+
+    .tienda{
+        position: relative;
+        right: 10vh;
+    }
+
+
+    .imagen{
+        height: 20vw;
+        width: 20vw;
+        
+    }
+    
+    .imagen2{
+        height: 22vw;
+        width: 22vw;
+    }
+    
+    .imagen3{
+        height: 20vw;
+        width: 20vw;
+    }
+    
+    .imagen4{
+        height: 20vw;
+        width: 20vw;
+    }
+    
+    .imagen5{
+        height: 20vw;
+        width: 20vw;
+    }
+    
+    .imagen6{
+        height: 20vw;
+        width: 20vw;
+    }
+
+    
+}
