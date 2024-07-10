@@ -2,7 +2,7 @@
     font-family: 'minecraft';
     font-style: normal;
     font-weight: normal;
-    src: url("./fuente/Minecrafter.Reg.ttf") format('truetype');
+    src: url("/Proyecto/fuente/Minecrafter.Reg.ttf") format('truetype');
     }
 
 *{
@@ -12,7 +12,7 @@
 }
 
 body{
-    background-image: url(./imagenes/minecraft.jpeg);
+    background-image: url(/Proyecto/imagenes/minecraft.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

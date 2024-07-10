@@ -2,7 +2,7 @@
     font-family: 'minecraft';
     font-style: normal;
     font-weight: normal;
-    src: url("./fuente/Minecrafter.Reg.ttf") format('truetype');
+    src: url("/Proyecto/fuente/Minecrafter.Reg.ttf") format('truetype');
     }
 
 *{
@@ -12,7 +12,7 @@
 }
 
 body{
-    background-image: url(./imagenes/minecraft.jpeg);
+    background-image: url(/Proyecto/imagenes/minecraft.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -52,7 +52,6 @@ display:flex ;
 list-style: none;
 text-align: center;
 width: fit-content;
-position: static;
 
 }
 .item{
@@ -88,9 +87,17 @@ a{
     height: fit-content;
     justify-content: flex-end;
     font-family: 'minecraft';
+    
 }
 
-
+.contenido2{
+    background-color: rgba(253, 253, 150, 0.55);
+    backdrop-filter: blur(4px);
+    display: flex;
+    height: fit-content;
+    justify-content: flex-end;
+    font-family: 'minecraft';
+}
 
 .imagen{
     height: 16vw;
@@ -105,32 +112,31 @@ a{
 
 .imagen3{
     height: 16vw;
-    width: 16vw;
-}
-
-.imagen4{
-    height: 16vw;
-    width: 16vw;
-}
-
-.imagen5{
-    height: 16vw;
-    width: 16vw;
-}
-
-.imagen6{
-    height: 16vw;
-    width: 16vw;
+    width: 17vw;
 }
 
 .texto{
     display: flex;
     justify-content: center;
     align-items: center;
-    width:calc(84vw - 10vw) ;
+    width:calc(80vw - 10vw) ;
     border: 2px solid;
     font-size: x-large;
     text-align: center;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+
+.texto2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:calc(80vw - 10vw) ;
+    border: 2px solid;
+    font-size: large;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 2px;
 }
 
 .buscar{
@@ -144,12 +150,13 @@ a{
 
 @media (max-width:480px){
     body{
-        overflow-x: hidden;
+        background-size: 100vh;
     }
-
+    
     #titulo{
         width: 100vw;
-        height: 50px;
+        height: 53px;
+        padding: 1rem;
     }
 
     .item{
@@ -164,15 +171,24 @@ a{
         position: relative;
         left: 32vh;
     }
-    
+
     .sesion{
         border: none;
         left: 0vh;
     }
-
+    
     .texto{
         font-size: medium;
+        line-height: 22px;
+        letter-spacing: 1px;
         width: auto;
+    }
+
+    .texto2{
+        font-size: medium;
+        width: auto;
+        line-height: 22px;
+        letter-spacing: 1px;
     }
 
     .imagen{
@@ -185,18 +201,6 @@ a{
 
     .imagen3{
     display: none;
-    }
-
-    .imagen4{
-        display: none;
-    }
-
-    .imagen5{
-        display: none;
-    }
-
-    .imagen6{
-        display: none;
     }
     
     .contenido2{
@@ -216,6 +220,10 @@ a{
 }
 
 @media(max-width:960px){
+    body{
+        height: 100vh;
+    }
+    
     .logo{
         width: 7vw;
         height: 6vh;
@@ -223,11 +231,16 @@ a{
 
     .texto{
     font-size: medium;
-    letter-spacing: 1px;
+    line-height: 16px;
     }
-
+    
     .sesion{
         left: 2.4vh;
+    }
+
+    .texto2{
+    font-size: medium;
+    width: auto;
     }
 
     .imagen2{
@@ -235,30 +248,31 @@ a{
     }
 
     .imagen3{
-    display: none;
-    }
-
-    .imagen4{
         display: none;
     }
 
-    .imagen5{
-        display: none;
-    }
-
-    .imagen6{
-        display: none;
+    .video{
+        height: 100vw;
     }
 
     .buscar{
         top: 7rem;
     }
 
+    
 }
 
 @media(max-width:1328px){
     .texto{
         font-size: medium;
+    }
+
+    .texto2{
+        width: auto;
+    }
+
+    .imagen2{
+        display: none;
     }
 
     .video{

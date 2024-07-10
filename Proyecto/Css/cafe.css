@@ -2,7 +2,7 @@
     font-family: 'minecraft';
     font-style: normal;
     font-weight: normal;
-    src: url("./fuente/Minecrafter.Reg.ttf") format('truetype');
+    src: url("/Proyecto/fuente/Minecrafter.Reg.ttf") format('truetype');
     }
 
 *{
@@ -12,7 +12,7 @@ box-sizing: border-box;
 }
 
 body{
-    background-image: url(./imagenes/minecraft.jpeg);
+    background-image: url(/Proyecto/imagenes/minecraft.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -35,9 +35,9 @@ body{
 
 .sesion{
     position: relative;
-    border: 2px solid;
-    padding: 10px;
     left: 10vh;
+    padding: 10px;
+    border: 2px solid;
 }
 
 .item{
@@ -61,13 +61,11 @@ display:flex ;
 list-style: none;
 text-align: center;
 width: fit-content;
-
 }
 
 a{
     text-decoration: none;
     color: black;
-
 }
 
 .tienda{
@@ -138,8 +136,9 @@ a{
 }
 
 .edad{
-    width: 200px;
-    
+    width: 40px;
+    position: relative;
+    left: 24px;
 }
 
 
@@ -149,21 +148,13 @@ a{
 }
 
 .enviar{
-    width: fit-content;
-    height: fit-content;
-    margin-top: 10px;
-    padding: 10px;
-    
-}
-.reset{
-    margin-top: 10px;
-    padding: 10px;
+    width: 4vw;
+    height: 4vh;
 }
 
-.contra{
-    width: fit-content;
-    height: fit-content;
-    margin-top: 10px;
+.reset{
+    width: 4vw;
+    height: 4vh;
 }
 
 .cubo{
@@ -177,7 +168,7 @@ a{
 }
 
 .cubo:hover{
-    background-image: url("./imagenes/goku-prowler.gif");
+    background-image: url("/Proyecto/imagenes/goku-prowler.gif");
     background-size: cover;
     transition: all 0.5s;
     opacity:3;
@@ -208,7 +199,7 @@ a{
 }
 
 .cubo2:hover{
-    background-image: url("./imagenes/roca.gif");
+    background-image: url("/Proyecto/imagenes/roca.gif");
     background-size: cover;
     transition: all 0.5s;
 }
@@ -235,25 +226,19 @@ a{
         width: auto;
     }
 
-    .sesion{
-        left: 0vh;
-        border: none;
-        
-    }
-
     .tienda{
         border: none;
         position: relative;
         left: 32vh;
     }
 
-    .contenido{
-        width: auto;
-        height: auto;
-    }
-
     .imagen{
         display: none;
+    }
+
+    .sesion{
+        border: none;
+        left: 0vh;
     }
 
     .item{
@@ -271,15 +256,14 @@ a{
         }
 
     .enviar{
-        width: 30vh;
-        height: fit-content;
+        width: 10vw;
+        height: 4vh;
     }
 
     .reset{
-        width: fit-content;
-        height: fit-content;
+        width: 10vw;
+        height: 4vh;
     }
-
 
     .cubo{
         position: relative;
@@ -314,17 +298,15 @@ a{
     letter-spacing: 1px;
     line-height: 1rem;
     }
-    
-    
 
     .enviar{
-        width: fit-content;
-        height:fit-content;
+        width: 10vw;
+        height: 4vh;
     }
 
     .reset{
-        width: fit-content;
-        height:fit-content;
+        width: 10vw;
+        height: 4vh;
     }
 
     .cubo{

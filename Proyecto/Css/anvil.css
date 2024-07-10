@@ -2,7 +2,7 @@
     font-family: 'minecraft';
     font-style: normal;
     font-weight: normal;
-    src: url("./fuente/Minecrafter.Reg.ttf") format('truetype');
+    src: url("/Proyecto/fuente/Minecrafter.Reg.ttf") format('truetype');
     }
 
 *{
@@ -12,7 +12,7 @@
 }
 
 body{
-    background-image: url(./imagenes/minecraft.jpeg);
+    background-image: url(/Proyecto/imagenes/minecraft.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -42,8 +42,8 @@ body{
 .sesion{
     position: relative;
     left: 10vh;
-    border: 2px solid;
     padding: 10px;
+    border: 2px solid;
 }
 
 #navegacion{
@@ -69,7 +69,7 @@ a{
 
 .tienda{
     position: relative;
-    right: 12vh;
+    right: 13vh;
     padding: 10px;
     border: 2px solid;
 }
@@ -122,6 +122,15 @@ a{
     width: 16vw;
 }
 
+.buscar{
+    display: flex;
+    justify-content: right;
+    float: right;
+    position: absolute;
+    font-family: 'minecraft';
+    
+}
+
 .texto{
     display: flex;
     justify-content: center;
@@ -132,14 +141,6 @@ a{
     text-align: center;
 }
 
-.buscar{
-    display: flex;
-    justify-content: right;
-    float: right;
-    position: absolute;
-    font-family: 'minecraft';
-    
-}
 
 
 @media (max-width:480px){
@@ -164,15 +165,15 @@ a{
         position: relative;
         left: 32vh;
     }
-    
-    .texto{
-        font-size: medium;
-        width: auto;
-    }
 
     .sesion{
         border: none;
         left: 0vh;
+    }
+    
+    .texto{
+        font-size: medium;
+        width: auto;
     }
 
     .imagen{
@@ -221,15 +222,13 @@ a{
         height: 6vh;
     }
 
-    
+    .sesion{
+        left: 2.4vh;
+    }
 
     .texto{
     font-size: medium;
     letter-spacing: 1px;
-    }
-
-    .sesion{
-        left: 2.4vh;
     }
 
     .imagen2{

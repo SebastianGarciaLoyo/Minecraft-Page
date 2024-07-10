@@ -2,7 +2,7 @@
     font-family: 'minecraft';
     font-style: normal;
     font-weight: normal;
-    src: url("./fuente/Minecrafter.Reg.ttf") format('truetype');
+    src: url("/Proyecto/fuente/Minecrafter.Reg.ttf") format('truetype');
     }
 
 *{
@@ -12,7 +12,7 @@ box-sizing: border-box;
 }
 
 body{
-    background-image: url(./imagenes/minecraft.jpeg);
+    background-image: url(/Proyecto/imagenes/minecraft.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -35,9 +35,9 @@ body{
 
 .sesion{
     position: relative;
-    left: 10vh;
-    padding: 10px;
     border: 2px solid;
+    padding: 10px;
+    left: 10vh;
 }
 
 .item{
@@ -61,11 +61,13 @@ display:flex ;
 list-style: none;
 text-align: center;
 width: fit-content;
+
 }
 
 a{
     text-decoration: none;
     color: black;
+
 }
 
 .tienda{
@@ -136,9 +138,8 @@ a{
 }
 
 .edad{
-    width: 40px;
-    position: relative;
-    left: 24px;
+    width: 200px;
+    
 }
 
 
@@ -148,13 +149,21 @@ a{
 }
 
 .enviar{
-    width: 4vw;
-    height: 4vh;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+    padding: 10px;
+    
+}
+.reset{
+    margin-top: 10px;
+    padding: 10px;
 }
 
-.reset{
-    width: 4vw;
-    height: 4vh;
+.contra{
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
 }
 
 .cubo{
@@ -226,19 +235,25 @@ a{
         width: auto;
     }
 
+    .sesion{
+        left: 0vh;
+        border: none;
+        
+    }
+
     .tienda{
         border: none;
         position: relative;
         left: 32vh;
     }
 
-    .imagen{
-        display: none;
+    .contenido{
+        width: auto;
+        height: auto;
     }
 
-    .sesion{
-        border: none;
-        left: 0vh;
+    .imagen{
+        display: none;
     }
 
     .item{
@@ -256,14 +271,15 @@ a{
         }
 
     .enviar{
-        width: 10vw;
-        height: 4vh;
+        width: 30vh;
+        height: fit-content;
     }
 
     .reset{
-        width: 10vw;
-        height: 4vh;
+        width: fit-content;
+        height: fit-content;
     }
+
 
     .cubo{
         position: relative;
@@ -298,15 +314,17 @@ a{
     letter-spacing: 1px;
     line-height: 1rem;
     }
+    
+    
 
     .enviar{
-        width: 10vw;
-        height: 4vh;
+        width: fit-content;
+        height:fit-content;
     }
 
     .reset{
-        width: 10vw;
-        height: 4vh;
+        width: fit-content;
+        height:fit-content;
     }
 
     .cubo{
